@@ -33,39 +33,11 @@ public class VueTableauHonneur extends Vue {
 	{
 		super.activerControles();
 		
-		AnchorPane badgePolice = new AnchorPane();
-		badgePolice.setPrefHeight(200);
-		badgePolice.setPrefWidth(200);
-		badgePolice.setStyle("-fx-background-color:blue");
+		BadgePolice badgePolice = new BadgePolice();
 		
 		AnchorPane espaceTravail = (AnchorPane)lookup("#espace-travail");
 		espaceTravail.getChildren().add(badgePolice);
 		
-		ImageView ecusson = new ImageView();
-		ecusson.setImage(new Image("vue/badge/armoirie.png"));
-		
-		badgePolice.getChildren().add(ecusson);
-		
-		ImageView plaque = new ImageView();
-		plaque.setImage(new Image("vue/badge/plaque.png"));
-		plaque.setLayoutX(100);
-		plaque.setLayoutY(240);
-		badgePolice.getChildren().add(plaque);
-		
-		ImageView etoile = new ImageView();
-		etoile.setImage(new Image("vue/badge/etoile.png"));
-		etoile.setLayoutX(100);
-		etoile.setLayoutY(110);
-		//etoile.setScaleX(-1.5);
-		//etoile.setScaleY(1.5);
-		badgePolice.getChildren().add(etoile);
-		
-		Label motto = new Label();
-		motto.setText("POLICE");
-		motto.setStyle("-fx-font:25px Tahoma; -fx-font-weight:bold;");
-		motto.setLayoutX(100);
-		motto.setLayoutY(60);
-		badgePolice.getChildren().add(motto);
 		
 	}	
 }
