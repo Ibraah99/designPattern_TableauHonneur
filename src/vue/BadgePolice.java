@@ -35,6 +35,38 @@ public class BadgePolice  extends AnchorPane{
 		this.getChildren().add(motto);
 	}
 	
+	
+	public BadgePolice auEtoile(TYPE_ETOILE type) {
+		
+		this.setEtoile(type);
+		return this;
+	}
+	
+	public BadgePolice armoirie(TYPE_ARMOIRIE type) {
+		
+		this.setArmoirie(type);
+		return this;
+	}
+	
+	public BadgePolice titreSurPlaque(TYPE_PLAQUE type) {
+			
+			this.setPlaque(type);
+			return this;
+		}
+	
+	public BadgePolice deCouleur(COULEUR couleur) {
+		
+		this.setCouleur(couleur);
+		return this;
+	}
+	
+	public BadgePolice proclamant(String texte) {
+			
+			this.setMotto(texte);
+			return this;
+		}
+		
+	
 	public enum TYPE_ETOILE{ETOILE, SHERIF, ARMYFORCE, ARMYDIVISION}
 	protected ImageView etoile;
 	public void setEtoile(TYPE_ETOILE type) {

@@ -3,6 +3,10 @@ import com.sun.media.jfxmedia.logging.Logger;
 import architecture.Vue;
 import controleur.ControleurTableauHonneur;
 import javafx.scene.layout.AnchorPane;
+import vue.BadgePolice.COULEUR;
+import vue.BadgePolice.TYPE_ARMOIRIE;
+import vue.BadgePolice.TYPE_ETOILE;
+import vue.BadgePolice.TYPE_PLAQUE;
 
 public class VueTableauHonneur extends Vue {
 
@@ -21,7 +25,7 @@ public class VueTableauHonneur extends Vue {
 	{
 		super.activerControles();
 		
-		BadgePolice badgePolice = new BadgePolice();
+		BadgePolice badgePolice = new BadgePolice().deCouleur(COULEUR.NOIR).armoirie(TYPE_ARMOIRIE.RONDE).auEtoile(TYPE_ETOILE.SHERIF).titreSurPlaque(TYPE_PLAQUE.LIEUTENANT).proclamant("S.W.A.T");
 		
 		AnchorPane espaceTravail = (AnchorPane)lookup("#espace-travail");
 		espaceTravail.getChildren().add(badgePolice);
