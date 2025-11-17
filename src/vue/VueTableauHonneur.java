@@ -1,20 +1,8 @@
 package vue;
-
-import java.util.Hashtable;
-
 import com.sun.media.jfxmedia.logging.Logger;
-
 import architecture.Vue;
 import controleur.ControleurTableauHonneur;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.shape.Rectangle;
 
 public class VueTableauHonneur extends Vue {
 
